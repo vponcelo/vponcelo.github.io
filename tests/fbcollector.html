@@ -27,12 +27,12 @@ Released: 4.3.13
 	  window.fbAsyncInit = function() {
 		FB.init({
 		  appId      : '450831032885608',
+		  cookie     : true,
 		  xfbml      : true,
 		  version    : 'v10.0'
-		});
+		});		  
 		FB.AppEvents.logPageView();
 	  };
-
 	  (function(d, s, id){
 		 var js, fjs = d.getElementsByTagName(s)[0];
 		 if (d.getElementById(id)) {return;}
@@ -41,12 +41,15 @@ Released: 4.3.13
 		 fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
 	</script>
+	<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0&appId=450831032885608&autoLogAppEvents=1" nonce="jR5zjlrO"></script>
 	<div class="container">
 		<header>
 			<h1><a>This is just an app test site!</a></h1>
 			<br class="clearfloat" />
 		</header>
-	</div>
+	</div>	
+	<div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
 	<div
 	  class="fb-like"
 	  data-share="true"
